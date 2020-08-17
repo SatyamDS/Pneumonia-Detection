@@ -1,0 +1,50 @@
+html,body{
+    scroll-behavior: smooth;
+    height: 100%;
+  margin: 0;
+}
+
+.bg-image{
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    animation: slidefade 15s linear 0s infinite alternate forwards ;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    /*animation-timing-function:ease;*/
+    background-image:url("ABC.jpg");
+     filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
+.bg-text{
+        text-align: center;
+        /*background-color: rgb(0,0,0); /* Fallback color */
+/*  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  font-weight: bold;
+        /*padding:10%;*/
+        background-position: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+@keyframes slidefade{
+    0%{
+        background-image:url("ABC.jpg")
+    }
+    25%{
+        background-image:url("ABC6.jpg")
+    }
+    50%{
+        background-image:url("ABC3.jpg")
+    }
+    75%{
+        background-image:url("ABC4.jpg")
+    }
+    100%{
+        background-image:url("ABC5.jpg")
+    }
+}
